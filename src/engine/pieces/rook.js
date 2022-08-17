@@ -1,7 +1,6 @@
 import Piece from './piece';
 import Square from "../square";
 
-
 export default class Rook extends Piece {
     constructor(player) {
         super(player);
@@ -23,7 +22,7 @@ export default class Rook extends Piece {
             if (this.squareTaken(board, square)) {
                 break;
             } else {
-                moves.push(square); // moves up}
+                moves.push(square); // moves up
             }
         }
         for (let i = 1; i <= (location.row); i++) {
@@ -31,7 +30,7 @@ export default class Rook extends Piece {
             if (this.squareTaken(board, square)) {
                 break;
             } else {
-                moves.push(square); // moves down}
+                moves.push(square); // moves down
             }
         }
         for (let i = 1; i <= (7 - location.col); i++) {
@@ -40,8 +39,8 @@ export default class Rook extends Piece {
             if (this.squareTaken(board, square)) {
                 break;
             } else {
-                moves.push(square);
-            } // moves right;}
+                moves.push(square); // moves right;
+            }
         }
 
         for (let i = 1; i <= (location.col); i++) {
@@ -51,7 +50,7 @@ export default class Rook extends Piece {
             if (this.squareTaken(board, square)) {
                 break;
             } else {
-                moves.push(square); // moves left;}
+                moves.push(square); // moves left;
             }
 
         }
