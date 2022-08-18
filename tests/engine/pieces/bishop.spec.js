@@ -14,7 +14,7 @@ describe('Bishop', () => {
         board.setPiece(Square.at(2, 3), bishop);
 
         const moves = bishop.getAvailableMoves(board);
-
+        
         const expectedMoves = [
             // Forwards diagonal
             Square.at(0, 1), Square.at(1, 2), Square.at(3, 4), Square.at(4, 5), Square.at(5, 6), Square.at(6, 7),
